@@ -1,0 +1,83 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #383843;
+}
+
+#title {
+    position: absolute;
+    top: 0;
+    left: 1;
+    color: rgb(210, 186, 91);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(7, 50px);
+    gap: 7px;
+    justify-content: center;
+}
+
+#board div {
+    width: 50px;
+    height: 50px;
+    background-color: blanchedalmond;
+    border-radius: 50%;
+    cursor: pointer;
+    border: solid 2px;
+}
+
+#board div.red {
+    background-color: rgb(142, 38, 38);
+}
+
+#board div.yellow {
+    background-color:rgb(210, 186, 91);
+}
+
+button {
+    background-color: blanchedalmond;
+    margin: 20px;
+    border: solid 2px rgb(3, 3, 3);
+    border-radius: 9px;
+    width: 150px;
+    height: 50px;
+}
+
+button:hover {
+    background-color: rgb(210, 186, 91);
+}
+
+.scores {
+    background-color: rgb(250, 250, 250);
+    border: solid rgb(3, 3, 3);
+    border-radius: 7px;
+    width: 100px;
+    margin: 7px;
+}
+
+.scores, span {
+    margin: 7px;
+    width: 150px;
+    background-color: blanchedalmond;
+
+}
+
+footer {
+    position: absolute; /* Posicionar el footer de forma absoluta */
+    bottom: 0; /* Ubicarlo en la parte inferior */
+    left: 0; /* Alinearlo al borde izquierdo */
+    width: 100%; /* Establecer el ancho al 100% para abarcar todo el ancho */
+    text-align: center; /* Centrar contenido horizontalmente */
+    background-color: rgb(210, 186, 91); /* Color de fondo opcional para el pie de página */
+    padding: 5px; /* Agregar algo de padding para espaciado */
+}
